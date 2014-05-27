@@ -35,7 +35,7 @@ struct element {
 
 // Déclaration des fonctions
 unsigned long long getSize(char *file_path, ino_t * tabNoInode, int * indice_tab_inode);
-struct element creer_element(long long taille,char *nom);
+struct element creer_element(unsigned long long taille,char *nom);
 int nbre_elements(DIR *dirp);
 struct element trier(struct element *elements, int nb_elements);
 bool lien_physique_existe(ino_t * tabNoInode, int * indice_tab_inode, ino_t noInode);
